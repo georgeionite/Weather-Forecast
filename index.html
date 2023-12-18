@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="text-center text-white bg-dark p-2 weather-header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container" style="max-width: 1400px">
+    <div class="row">
+      <aside class="search-area">
+        <h2 id="form-heading" class="form-label">
+          Search for a City:
+        </h2>
+        <form id="search-form" class="form">
+          <input class="form-input" type="text" id="search-input" placeholder="Enter city name" aria-labelledby="form-heading" />
+          <button type="submit" class="btn search-button" id="search-button">Search</button>
+        </form>
+        <div class="list-group" id="history"></div>
+      </aside>
+
+      <main class="weather-area">
+        <section id="current-weather" class="current-weather"></section>
+        <section id="forecast" class="forecast"></section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Application Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

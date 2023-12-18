@@ -1,0 +1,77 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the header */
+  .weather-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  /* Container styling */
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Search area styling */
+  .search-area {
+    width: 30%;
+  }
+  
+  .search-area .form-label {
+    margin-bottom: 10px;
+  }
+  
+  .search-area .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-area .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Weather display area styling */
+  .weather-area {
+    width: 65%;
+  }
+  
+  .current-weather, .forecast {
+    margin-bottom: 20px;
+  }
+  
+  /* Forecast card styling */
+  .forecast {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast > div {
+    width: 18%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
